@@ -36,6 +36,12 @@
                        class="w-full px-3 sm:px-4 py-3 sm:py-4 border-2 border-gray-200 rounded-lg sm:rounded-xl text-sm sm:text-base transition-all duration-300 bg-gray-50 focus:outline-none focus:border-primary focus:bg-white focus:ring-4 focus:ring-primary/10">
             </div>
             
+            <div class="text-right mb-4">
+                <button type="button" id="showForgetPassword" class="text-primary text-xs sm:text-sm font-medium hover:underline">
+                    Forgot Password?
+                </button>
+            </div>
+            
             <button type="button" id="lbtn" 
                     class="w-full py-3 sm:py-4 bg-gradient-to-r from-primary to-secondary text-white rounded-lg sm:rounded-xl text-sm sm:text-base font-semibold transition-all duration-300 mb-4 sm:mb-6 hover:-translate-y-1 hover:shadow-xl hover:shadow-primary/30 active:scale-95">
                 Sign In
@@ -62,6 +68,34 @@
 
         <div class="mt-6 sm:mt-8 text-gray-500 text-xs sm:text-sm">
             Don't have an account? <a href="../signup.html" class="text-primary font-semibold hover:underline">Sign Up</a>
+        </div>
+    </div>
+
+    <!-- Forget Password Modal -->
+    <div id="forgetPasswordModal" class="modal hidden fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4 z-50">
+        <div class="bg-white rounded-2xl p-6 sm:p-8 max-w-sm w-full shadow-2xl">
+            <div class="flex justify-between items-center mb-6">
+                <h3 class="text-xl font-semibold text-gray-800">Reset Password</h3>
+                <button class="closeModal text-gray-400 hover:text-gray-600 text-2xl">&times;</button>
+            </div>
+            
+            <p class="text-gray-600 mb-6 text-sm">Enter your email address and we'll send you a link to reset your password.</p>
+            
+            <div class="mb-6">
+                <label for="forgetEmail" class="block mb-2 text-gray-600 font-medium text-sm">Email Address</label>
+                <input type="email" id="forgetEmail" placeholder="Enter your email" 
+                       class="w-full px-3 py-3 border-2 border-gray-200 rounded-lg text-sm transition-all duration-300 bg-gray-50 focus:outline-none focus:border-primary focus:bg-white focus:ring-4 focus:ring-primary/10">
+            </div>
+            
+            <div class="flex gap-3">
+                <button type="button" class="closeModal flex-1 py-3 border-2 border-gray-200 text-gray-700 rounded-lg text-sm font-medium transition-all duration-300 hover:bg-gray-50">
+                    Cancel
+                </button>
+                <button type="button" id="forgetPasswordBtn" 
+                        class="flex-1 py-3 bg-gradient-to-r from-primary to-secondary text-white rounded-lg text-sm font-semibold transition-all duration-300 hover:-translate-y-1 hover:shadow-lg active:scale-95">
+                    Send Reset Link
+                </button>
+            </div>
         </div>
     </div>
 
