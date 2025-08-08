@@ -19,66 +19,66 @@
     </script>
 </head>
 <body class="min-h-screen bg-gradient-to-br from-primary to-secondary text-gray-800">
-    <nav class="bg-white/95 backdrop-blur-lg px-10 py-5 shadow-lg flex justify-between items-center">
-        <div class="text-2xl font-bold text-primary">🔥 Firebase Auth</div>
-        <div class="flex items-center gap-5">
-            <div class="flex items-center gap-3 bg-gray-50 px-4 py-3 rounded-full border-2 border-gray-200">
-                <div class="w-9 h-9 bg-gradient-to-r from-primary to-secondary rounded-full flex items-center justify-center text-white font-semibold" id="userAvatar">U</div>
-                <span id="userEmail" class="text-gray-700">Loading...</span>
+    <nav class="bg-white/95 backdrop-blur-lg px-4 sm:px-6 md:px-10 py-4 sm:py-5 shadow-lg flex flex-col sm:flex-row justify-between items-center gap-3 sm:gap-0">
+        <div class="text-xl sm:text-2xl font-bold text-primary">🔥 Firebase Auth</div>
+        <div class="flex flex-col sm:flex-row items-center gap-3 sm:gap-5">
+            <div class="flex items-center gap-2 sm:gap-3 bg-gray-50 px-3 sm:px-4 py-2 sm:py-3 rounded-full border-2 border-gray-200">
+                <div class="w-8 h-8 sm:w-9 sm:h-9 bg-gradient-to-r from-primary to-secondary rounded-full flex items-center justify-center text-white font-semibold text-sm sm:text-base" id="userAvatar">U</div>
+                <span id="userEmail" class="text-gray-700 text-sm sm:text-base">Loading...</span>
             </div>
-            <button class="bg-red-500 text-white px-5 py-2 rounded-full text-sm font-semibold transition-all duration-300 hover:bg-red-600 hover:-translate-y-1 hover:shadow-lg hover:shadow-red-500/30" id="logoutBtn">
+            <button class="bg-red-500 text-white px-4 sm:px-5 py-2 rounded-full text-xs sm:text-sm font-semibold transition-all duration-300 hover:bg-red-600 hover:-translate-y-1 hover:shadow-lg hover:shadow-red-500/30 active:scale-95" id="logoutBtn">
                 <span>🚪</span> Logout
             </button>
         </div>
     </nav>
 
-    <div class="max-w-6xl mx-auto my-10 px-5">
-        <div class="bg-white/95 backdrop-blur-lg rounded-3xl p-10 shadow-2xl text-center mb-8">
-            <div class="text-6xl mb-5">🎉</div>
-            <h1 class="text-4xl font-bold text-gray-800 mb-4">Welcome to Your Dashboard</h1>
-            <p class="text-xl text-gray-600 mb-8">You've successfully logged in to your account</p>
+    <div class="max-w-6xl mx-auto my-6 sm:my-10 px-3 sm:px-5">
+        <div class="bg-white/95 backdrop-blur-lg rounded-2xl sm:rounded-3xl p-6 sm:p-8 md:p-10 shadow-2xl text-center mb-6 sm:mb-8">
+            <div class="text-4xl sm:text-5xl md:text-6xl mb-4 sm:mb-5">🎉</div>
+            <h1 class="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-800 mb-3 sm:mb-4">Welcome to Your Dashboard</h1>
+            <p class="text-lg sm:text-xl text-gray-600 mb-6 sm:mb-8">You've successfully logged in to your account</p>
             
-            <div class="bg-gradient-to-r from-primary to-secondary text-white p-6 rounded-2xl mb-8">
-                <h3 class="text-xl mb-4">👤 User Information</h3>
-                <p class="text-lg opacity-90" id="userEmailDisplay">Loading user details...</p>
+            <div class="bg-gradient-to-r from-primary to-secondary text-white p-4 sm:p-6 rounded-xl sm:rounded-2xl mb-6 sm:mb-8">
+                <h3 class="text-lg sm:text-xl mb-3 sm:mb-4">👤 User Information</h3>
+                <p class="text-base sm:text-lg opacity-90" id="userEmailDisplay">Loading user details...</p>
             </div>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-5 mb-8">
-            <div class="bg-white/95 backdrop-blur-lg rounded-2xl p-8 text-center shadow-xl transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl">
-                <div class="text-4xl mb-4">📊</div>
-                <div class="text-3xl font-bold text-primary mb-2">100%</div>
-                <div class="text-gray-600">Authentication Success</div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5 mb-6 sm:mb-8">
+            <div class="bg-white/95 backdrop-blur-lg rounded-xl sm:rounded-2xl p-6 sm:p-8 text-center shadow-xl transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl">
+                <div class="text-3xl sm:text-4xl mb-3 sm:mb-4">📊</div>
+                <div class="text-2xl sm:text-3xl font-bold text-primary mb-2">100%</div>
+                <div class="text-gray-600 text-sm sm:text-base">Authentication Success</div>
             </div>
-            <div class="bg-white/95 backdrop-blur-lg rounded-2xl p-8 text-center shadow-xl transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl">
-                <div class="text-4xl mb-4">🔒</div>
-                <div class="text-3xl font-bold text-primary mb-2">Secure</div>
-                <div class="text-gray-600">Firebase Protected</div>
+            <div class="bg-white/95 backdrop-blur-lg rounded-xl sm:rounded-2xl p-6 sm:p-8 text-center shadow-xl transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl">
+                <div class="text-3xl sm:text-4xl mb-3 sm:mb-4">🔒</div>
+                <div class="text-2xl sm:text-3xl font-bold text-primary mb-2">Secure</div>
+                <div class="text-gray-600 text-sm sm:text-base">Firebase Protected</div>
             </div>
-            <div class="bg-white/95 backdrop-blur-lg rounded-2xl p-8 text-center shadow-xl transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl">
-                <div class="text-4xl mb-4">⚡</div>
-                <div class="text-3xl font-bold text-primary mb-2">Fast</div>
-                <div class="text-gray-600">Real-time Updates</div>
+            <div class="bg-white/95 backdrop-blur-lg rounded-xl sm:rounded-2xl p-6 sm:p-8 text-center shadow-xl transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl sm:col-span-2 lg:col-span-1">
+                <div class="text-3xl sm:text-4xl mb-3 sm:mb-4">⚡</div>
+                <div class="text-2xl sm:text-3xl font-bold text-primary mb-2">Fast</div>
+                <div class="text-gray-600 text-sm sm:text-base">Real-time Updates</div>
             </div>
         </div>
 
-        <div class="bg-white/95 backdrop-blur-lg rounded-3xl p-10 shadow-2xl">
-            <h3 class="text-2xl font-bold text-gray-800 text-center mb-8">🚀 Quick Actions</h3>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
-                <button class="bg-gradient-to-r from-primary to-secondary text-white p-5 rounded-2xl text-lg font-semibold transition-all duration-300 flex flex-col items-center gap-3 hover:-translate-y-1 hover:shadow-xl hover:shadow-primary/30">
-                    <div class="text-2xl">📝</div>
+        <div class="bg-white/95 backdrop-blur-lg rounded-2xl sm:rounded-3xl p-6 sm:p-8 md:p-10 shadow-2xl">
+            <h3 class="text-xl sm:text-2xl font-bold text-gray-800 text-center mb-6 sm:mb-8">🚀 Quick Actions</h3>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-5">
+                <button class="bg-gradient-to-r from-primary to-secondary text-white p-4 sm:p-5 rounded-xl sm:rounded-2xl text-sm sm:text-base md:text-lg font-semibold transition-all duration-300 flex flex-col items-center gap-2 sm:gap-3 hover:-translate-y-1 hover:shadow-xl hover:shadow-primary/30 active:scale-95">
+                    <div class="text-xl sm:text-2xl">📝</div>
                     <span>Create Post</span>
                 </button>
-                <button class="bg-gradient-to-r from-primary to-secondary text-white p-5 rounded-2xl text-lg font-semibold transition-all duration-300 flex flex-col items-center gap-3 hover:-translate-y-1 hover:shadow-xl hover:shadow-primary/30">
-                    <div class="text-2xl">📁</div>
+                <button class="bg-gradient-to-r from-primary to-secondary text-white p-4 sm:p-5 rounded-xl sm:rounded-2xl text-sm sm:text-base md:text-lg font-semibold transition-all duration-300 flex flex-col items-center gap-2 sm:gap-3 hover:-translate-y-1 hover:shadow-xl hover:shadow-primary/30 active:scale-95">
+                    <div class="text-xl sm:text-2xl">📁</div>
                     <span>Upload Files</span>
                 </button>
-                <button class="bg-gradient-to-r from-primary to-secondary text-white p-5 rounded-2xl text-lg font-semibold transition-all duration-300 flex flex-col items-center gap-3 hover:-translate-y-1 hover:shadow-xl hover:shadow-primary/30">
-                    <div class="text-2xl">⚙️</div>
+                <button class="bg-gradient-to-r from-primary to-secondary text-white p-4 sm:p-5 rounded-xl sm:rounded-2xl text-sm sm:text-base md:text-lg font-semibold transition-all duration-300 flex flex-col items-center gap-2 sm:gap-3 hover:-translate-y-1 hover:shadow-xl hover:shadow-primary/30 active:scale-95">
+                    <div class="text-xl sm:text-2xl">⚙️</div>
                     <span>Settings</span>
                 </button>
-                <button class="bg-gradient-to-r from-primary to-secondary text-white p-5 rounded-2xl text-lg font-semibold transition-all duration-300 flex flex-col items-center gap-3 hover:-translate-y-1 hover:shadow-xl hover:shadow-primary/30">
-                    <div class="text-2xl">📈</div>
+                <button class="bg-gradient-to-r from-primary to-secondary text-white p-4 sm:p-5 rounded-xl sm:rounded-2xl text-sm sm:text-base md:text-lg font-semibold transition-all duration-300 flex flex-col items-center gap-2 sm:gap-3 hover:-translate-y-1 hover:shadow-xl hover:shadow-primary/30 active:scale-95">
+                    <div class="text-xl sm:text-2xl">📈</div>
                     <span>Analytics</span>
                 </button>
             </div>
